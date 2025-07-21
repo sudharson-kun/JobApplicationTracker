@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Job Application Tracker</h1>
+    <div class="container">
+            <div class="inside">
+                <tr>
+                    <td><input id="JobPortal" value="" type="text" placeholder="JobPortal"></td>
+                </tr>
+            </div>
+            <div class="inside">
+                <tr>
+                    <td><input id="CompanyName" value="" type="text" placeholder="CompanyName"></td>
+                </tr>
+            </div>
+            <div class="inside">
+                <tr>
+                    <td><input id="Role" type="text" value="" placeholder="Role"></td>
+                </tr>
+            </div>
+            <div class="inside">
+                <tr>
+                    <td><input value="" id="Date" type="date" ></td>
+                </tr>
+            </div>
+            <div class="inside">
+                <tr>
+                    <td><label for="">Status</label>
+                        <select id="Status">
+                            <option value="Applied">Applied</option>
+                            <option value="Interview">Interview</option>
+                            <option value="Offer">Offer</option>
+                            <option value="Rejected">Rejected</option>
+                        </select><br>
+                    </td>
+                </tr>
+            </div>
+                <tr>
+                <button onclick="Add()" value="submit">Add</button>            
+                    </tr>
+            </div>
+
+            <table border="1" style="margin: 60px;">
+  <thead>
+    <tr>
+        <th>JobPortal</th>
+      <th>Company</th>
+      <th>Role</th>
+      <th>Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody id="outputTable">
+   
+  </tbody>
+</table>
+    
+            <script src="script.js"></script>
+</body>
+</html>
